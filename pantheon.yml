@@ -1,3 +1,4 @@
+api_version: 1
 
 # By default, any 'protected_web_paths' added to the pantheon.yml file
 # are combined with the paths from the pantheon.upstream.yml file. If
