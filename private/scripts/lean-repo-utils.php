@@ -85,6 +85,7 @@ function load_build_providers($fullRepository) {
  */
 function load_build_metadata($fullRepository) {
     $buildMetadataFile = "build-metadata.json";
+    print $fullRepository . " / " . $buildMetadataFile . "\n";
     if (!file_exists("$fullRepository/$buildMetadataFile")) {
       pantheon_raise_dashboard_error("Could not find build metadata file, $buildMetadataFile\n");
     }

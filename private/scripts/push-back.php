@@ -14,7 +14,6 @@ if (!isset($_ENV['PANTHEON_ENVIRONMENT']) || in_array($_ENV['PANTHEON_ENVIRONMEN
  */
 $bindingDir = $_SERVER['HOME'];
 // $fullRepository = realpath("$bindingDir/code");
-print "bindingDir: " . $bindingDir . "\n";
 $fullRepository = realpath("$bindingDir");
 // $docRoot = "$fullRepository/" . $_SERVER['DOCROOT'];
 
