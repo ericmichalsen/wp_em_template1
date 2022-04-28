@@ -21,7 +21,7 @@ print "Enter push-back. Repository root is $fullRepository.\n";
 $privateFiles = realpath("$bindingDir/files/private");
 // 4/28
 // $gitSecretsFile = "$privateFiles/.build-secrets/tokens.json";
-$gitSecretsFile = "/code/.build-secrets/tokens.json";
+$gitSecretsFile = ".build-secrets/tokens.json";
 $gitSecrets = load_git_secrets($gitSecretsFile);
 $git_token = $gitSecrets['token'];
 
