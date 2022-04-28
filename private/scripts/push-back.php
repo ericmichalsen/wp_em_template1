@@ -13,7 +13,9 @@ if (!isset($_ENV['PANTHEON_ENVIRONMENT']) || in_array($_ENV['PANTHEON_ENVIRONMEN
  * master repository.
  */
 $bindingDir = $_SERVER['HOME'];
-$fullRepository = realpath("$bindingDir/code");
+// $fullRepository = realpath("$bindingDir/code");
+print "bindingDir: " . $bindingDir . "\n";
+$fullRepository = realpath("$bindingDir");
 // $docRoot = "$fullRepository/" . $_SERVER['DOCROOT'];
 
 print "Enter push-back. Repository root is $fullRepository.\n";
